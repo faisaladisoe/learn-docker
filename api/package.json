@@ -1,0 +1,24 @@
+{
+  "name": "initial-learn-docker",
+  "version": "1.0.0",
+  "description": "Learn Docker for Dummies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faisaladisoe/learn-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faisaladisoe/learn-docker/issues"
+  },
+  "homepage": "https://github.com/faisaladisoe/learn-docker#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.18"
+  }
+}
