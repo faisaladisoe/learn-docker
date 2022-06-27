@@ -2,9 +2,19 @@ version: '3.8'
 services:
   api:
     build: ./api
-    container_name: learn-docker-compose
+    container_name: learn-docker-compose-api
     ports:
       - '4000:4000'
     volumes:
       - ./api:/app
-      - /app/node_modules
+      - /app/api/node_modules
+  interface:
+    build: ./myblog
+    container_name: learn-docker-compose-interface
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./myblog:/app
+      - /app/interface/node_modules
